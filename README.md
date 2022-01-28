@@ -42,8 +42,8 @@ Strateg.list_of_strategies_and_operational_programmes
 Strateg.strategy_data(strategy_id)
 ```
 
-| Variables     | Data type     | Required |
-|---------------|---------------|----------|
+| Variables          | Data type      | Required |
+|--------------------|----------------|----------|
 | ```strategy_id```  |  ```Integer``` | True     |
 
 
@@ -60,8 +60,8 @@ Strateg.cohesion_policies_list
 Strateg.cohesion_policy_data(cohesion_id)
 ```
 
-| Variables     | Data type     | Required |
-|---------------|---------------|----------|
+|      Variables     |    Data type   | Required |
+|--------------------|----------------|----------|
 | ```cohesion_id```  |  ```Integer``` | True     |
 
 ### Statistics by theme
@@ -79,8 +79,8 @@ Strateg.list_of_thematic_areas
 Strateg.thematic_area_data(area_id)
 ```
 
-| Variables     | Data type     | Required |
-|---------------|---------------|----------|
+| Variables      | Data type      | Required |
+|----------------|----------------|----------|
 | ```area_id```  |  ```Integer``` | True     |
 
 ### Territorial data
@@ -97,8 +97,8 @@ Strateg.list_of_territorial_units
 Strateg.territory_data(territory_code)
 ```
 
-| Variables     | Data type     | Required |
-|---------------|---------------|----------|
+|       Variables       | Data type      | Required |
+|-----------------------|----------------|----------|
 | ```territory_code```  |  ```Integer``` | True     |
 
 
@@ -116,8 +116,8 @@ Strateg.list_of_indicators
 Strateg.available_indicators_dimensions(area_id)
 ```
 
-| Variables     | Data type     | Required |
-|---------------|---------------|----------|
+| Variables      | Data type      | Required |
+|----------------|----------------|----------|
 | ```area_id```  |  ```Integer``` | True     |
 
 
@@ -132,8 +132,8 @@ Strateg.indicators_dimension_data(indicator_id, params = {})
 | ```indicator_id``` | ```Integer``` | True     |
 | ```level_id```     | ```String```  | False    |
 | ```place_id```     | ```Integer``` | False    |
-| ```section_id```     | ```Integer``` | False    |
-| ```sex_id```     | ```Integer``` | False    |
+| ```section_id```   | ```Integer``` | False    |
+| ```sex_id```       | ```Integer``` | False    |
 
 _**level_id [String]**_
 
@@ -169,19 +169,19 @@ _**sex_id [Integer]**_
 Strateg.real_data(dimension_id, indicator_id, params = {})
 ```
 
-| Variables          | Data type     | Required |
-|--------------------|---------------|----------|
-| ```dimension_id``` | ```Integer``` | True     |
-| ```indicator_id```     | ```Integer``` | True     |
-| ```territory_code```     | ```String``` | False    |
-| ```level_id```     | ```String``` | False     |
+| Variables             | Data type     | Required |
+|-----------------------|---------------|----------|
+| ```dimension_id```    | ```Integer``` | True     |
+| ```indicator_id```    | ```Integer``` | True     |
+| ```territory_code```  | ```String```  | False    |
+| ```level_id```        | ```String```  | False    |
 
 ### Indicators metrics
 
 #### Gets indicator's metadata
 
 ```ruby
-Strateg.indicators_metadata(indicator_id, params = {})
+Strateg.indicators_metadata(indicator_id)
 ```
 
 | Variables          | Data type     | Required |
@@ -193,12 +193,12 @@ Strateg.indicators_metadata(indicator_id, params = {})
 #### Gets coordinators data
 
 ```ruby
-Strateg.indicators_metadata(strategy_id, params = {})
+Strateg.coordinators_data(strategy_id)
 ```
 
 | Variables          | Data type     | Required |
 |--------------------|---------------|----------|
-| ```strategy_id``` | ```Integer``` | True     |
+| ```strategy_id```  | ```Integer``` | True     |
 
 ## Development
 
