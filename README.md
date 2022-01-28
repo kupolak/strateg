@@ -1,4 +1,4 @@
-![STRATEG](https://strateg.stat.gov.pl/strateg_small.png)
+[<img src="misc/logo_pl_n.png" width="300" height="150" height=/>](https://strateg.stat.gov.pl/)
 
 The STRATEG system is a publicly accessible system, designed to facilitate the process of monitoring the development and evaluating the effects of actions undertaken to strengthen social cohesion. The database contains a comprehensive set of key measures to monitor (mainly annual) development at the national level, as well as at lower levels of territorial division. To ensure international comparability, the database also contains the main indicators for the EU, its member states and regions at NUTS 2 level.
 
@@ -211,6 +211,11 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/kupola
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+[<img src="misc/footer_logo1_eng.png"/>](https://www.funduszeeuropejskie.gov.pl/)
+<img src="misc/footer_logo3_eng.png"/>
+[<img src="misc/footer_logo4_eng.png"/>](https://stat.gov.pl/)
+[<img src="misc/footer_logo5_eng.png"/>](https://ec.europa.eu/)
 
 ## Code of Conduct
 
