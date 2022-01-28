@@ -8,17 +8,15 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jakub Polak"]
   spec.email         = ["jakub.polak.vz@gmail.com"]
 
-  spec.summary       = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description   = "TODO: Write a longer description or delete this line."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Ruby gem for STRATEG API"
+  spec.description   = "The STRATEG API allows to view and download for further processing the full range of data and metadata contained in the STRATEG system. The data is made available through REST API in JSON format."
+  spec.homepage      = "https://github.com/kupolak/strateg"
   spec.license       = "MIT"
-  spec.required_ruby_version = ">= 2.4.0"
-
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'https://mygemserver.com'"
+  spec.required_ruby_version = ">= 2.7.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/kupolak/strateg"
+  spec.metadata["changelog_uri"] = "https://github.com/kupolak/strateg/blob/main/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 require_relative "strateg/version"
-
-module Strateg
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "strateg/core"
+require_relative "strateg/request"
+require_relative "strateg/api"
