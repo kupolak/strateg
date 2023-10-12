@@ -2,6 +2,10 @@
 
 # rubocop:disable Metrics/BlockLength
 RSpec.describe Strateg do
+  before do
+    sleep 1
+  end
+
   it 'has a version number' do
     expect(Strateg::VERSION).not_to be nil
   end
