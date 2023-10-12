@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require_relative "core"
-require_relative "request"
+require_relative 'core'
+require_relative 'request'
 
 # STRATEG module for interaction with API
 module Strateg
-  VERSION = "0.1.0"
+  VERSION = '0.1.0'
 
   module_function
 

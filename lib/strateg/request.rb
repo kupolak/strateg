@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "httparty"
+require 'httparty'
 
 # Request class for handling API requests
 class Request
@@ -8,7 +8,7 @@ class Request
     @url = url
     @params = params
     @headers = headers
-    @lang = "en"
+    @lang = 'en'
 
     @response = send_request(url, params, headers)
   end
@@ -28,7 +28,7 @@ class Request
   private
 
   def params_to_string(params)
-    params.to_a.map { |k, v| "#{k}=#{v}" }.join("&")
+    params.to_a.map { |k, v| "#{k}=#{v}" }.join('&')
   end
 
   def send_request(url, params, headers)
