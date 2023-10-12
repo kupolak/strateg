@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   and metadata contained in the STRATEG system. The data is made available through REST API in JSON format.'
   spec.homepage      = 'https://github.com/kupolak/strateg'
   spec.license       = 'MIT'
-  spec.required_ruby_version = '>= 3.2.0'
+  spec.required_ruby_version = '>= 3.0.0'
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/kupolak/strateg'
