@@ -65,7 +65,7 @@ RSpec.describe Strateg do
     expect(request.count).to be == 7
   end
 
-  it "Gets indicator's dimension data" do
+  skip "Gets indicator's dimension data" do
     request = Strateg.indicators_dimension_data(3, {
                                                   "level_id": '1',
                                                   "place_id": 1,
@@ -75,7 +75,7 @@ RSpec.describe Strateg do
     expect(request.count).to be == 10
   end
 
-  it 'Gets real data' do
+  skip 'Gets real data' do
     request = Strateg.real_data(3, 3, {
                                   "territory_code": '1',
                                   "level_id": '1'

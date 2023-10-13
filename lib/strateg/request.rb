@@ -28,12 +28,12 @@ class Request
   private
 
   def params_to_string(params)
-    params.to_a.map { |k, v| "#{k}=#{v}" }.join('&')
+    params.to_a.map { |k, v| "#{k}=#{v}" }.join('?')
   end
 
   def send_request(url, params, headers)
-    url += "?lang=#{@lang}"
-    "#{url}?#{params_to_string(params)}" if params
+    url = "#{url}?#{params_to_string(params)}" if params
+    url += "&lang=#{@lang}"
     HTTParty.get(url, headers)
   end
 end
