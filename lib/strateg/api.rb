@@ -5,7 +5,7 @@ require_relative 'request'
 
 # STRATEG module for interaction with API
 module Strateg
-  VERSION = '0.1.0'
+  VERSION = '1.0.0'
 
   module_function
 

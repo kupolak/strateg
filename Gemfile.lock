@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    strateg (0.1.0)
+    strateg (1.0.0)
       httparty (>= 0.17.3, < 0.22.0)
 
 GEM
