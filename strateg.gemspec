@@ -11,11 +11,12 @@ Gem::Specification.new do |spec|
   and metadata contained in the STRATEG system. The data is made available through REST API in JSON format.'
   spec.homepage      = 'https://github.com/kupolak/strateg'
   spec.license       = 'MIT'
-  spec.required_ruby_version = '>= 3.0.0'
+  spec.required_ruby_version = '>= 3.3.0'
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/kupolak/strateg'
   spec.metadata['changelog_uri'] = 'https://github.com/kupolak/strateg/blob/main/CHANGELOG.md'
+  spec.metadata['rubygems_mfa_required'] = 'true'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -28,12 +29,6 @@ Gem::Specification.new do |spec|
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
-
-  spec.add_development_dependency 'rake', '~> 13.1.0'
-  spec.add_development_dependency 'rspec', '~> 3.12.0'
-  spec.add_development_dependency 'rubocop', '~> 1.57'
-  spec.add_development_dependency 'rubocop-rake', '~> 0.6.0'
-  spec.add_development_dependency 'rubocop-rspec', '~> 2.25.0'
 
   spec.add_dependency 'httparty', '>= 0.17.3', '< 0.22.0'
 
