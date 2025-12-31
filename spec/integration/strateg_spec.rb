@@ -31,8 +31,8 @@ RSpec.describe Strateg do
   end
 
   it 'Gets cohesion policy data' do
-    request = Strateg.cohesion_policy_data(3)
-    expect(request[0]['objective']).to be == 'Low-emission economy'
+    request = Strateg.cohesion_policy_data(1013)
+    expect(request.first.count).to be == 2
   end
 
   it 'Gets list of thematic areas' do
@@ -65,21 +65,13 @@ RSpec.describe Strateg do
     expect(request.count).to be == 7
   end
 
-  skip "Gets indicator's dimension data" do
-    request = Strateg.indicators_dimension_data(3, {
-                                                  "level_id": '1',
-                                                  "place_id": 1,
-                                                  "section_id": 1,
-                                                  "sex_id": 1
-                                                })
+  it "Gets indicator's dimension data" do
+    request = Strateg.indicators_dimension_data(3)
     expect(request.count).to be == 10
   end
 
   skip 'Gets real data' do
-    request = Strateg.real_data(3, 3, {
-                                  "territory_code": '1',
-                                  "level_id": '1'
-                                })
+    request = Strateg.real_data(3, 3)
     expect(request.count).to be >= 3
   end
 
@@ -93,4 +85,5 @@ RSpec.describe Strateg do
     expect(request.count).to be == 3
   end
 end
+
 # rubocop:enable Metrics/BlockLength
